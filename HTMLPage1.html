@@ -1,0 +1,414 @@
+﻿<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>Elbread Roh</title>
+    <style>
+        body {
+            color: #000000;
+            background-color: #FFFFFF;
+        }
+
+        @font-face {
+            font-family: Oxygen;
+            src: url(Oxygen-Light.ttf);
+            font-weight: 200;
+        }
+
+        @font-face {
+            font-family: poppins;
+            src: url(Poppins/Poppins-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: poppins-bold;
+            src: url(Poppins/Poppins-Bold.ttf);
+        }
+
+        h1 {
+            font-size: 100px;
+            font-family: poppins-bold, sans-serif;
+            text-align: center;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 40px;
+            font-family: poppins-bold, sans-serif;
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+        }
+
+        h3 {
+            font-size: 30px;
+            font-family: poppins, sans-serif;
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+        }
+
+        hr {
+            width: 75%;
+            border-width: 2px;
+            border-style: double;
+        }
+
+        .main {
+            color: #FFFFFF;
+            font-size: 23px;
+            font-family: poppins, sans-serif;
+            margin: 20px 20px 20px 20px;
+            padding: 50px;
+            box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.6);
+            background-image: url('ybtexture30001.png');
+            background-color: rgba(44, 66, 235, 1);
+            background-blend-mode: overlay;
+            background-attachment: fixed;
+
+            animation-name: mainAnimation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            position: relative;
+            overflow: hidden;
+            
+        }
+
+        @keyframes mainAnimation{
+            0% {
+                background-image: url('ybtexture30001.png');
+                background-color: rgba(44, 66, 235, 1);
+                background-blend-mode: overlay;
+                background-attachment: fixed;
+            }
+            50% {
+                background-image: url('ybtexture30001.png');
+                background-color: rgba(100, 66, 235, 1);
+                background-blend-mode: overlay;
+                background-attachment: fixed;
+            }
+            100% {
+                background-image: url('ybtexture30001.png');
+                background-color: rgba(44, 66, 235, 1);
+                background-blend-mode: overlay;
+                background-attachment: fixed;
+            }
+        }
+
+        .button {
+            outline: 8px solid black;
+            color: #000000;
+            font-size: 23px;
+            font-family: poppins, sans-serif;
+            text-align: center;
+            margin: auto;
+            padding: 30px;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+
+        .button:hover{
+            background-color: rgba(107, 53, 235, 1);
+            color: #FFFFFF;
+        }
+
+        .circularimg {
+            display: block;
+            border-radius: 2%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.6);
+        }
+
+        div.scroll-container {
+            background-image: url('ybtexture30001.png');
+            background-color: rgba(44, 62, 235, 1);
+            background-blend-mode: overlay;
+            background-attachment: fixed;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 40px;
+            margin: 20px 20px 20px 20px;
+            animation-name: mainAnimation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        div.scroll-container iframe {
+            border-radius: 2%;
+            margin: 0px 20px 0px 20px;
+            box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.6);
+        }
+
+    </style>
+
+    <script>
+        function button(idElementText, idElementButton) {
+            var textType = document.getElementById(idElementText);
+            var buttonType = document.getElementById(idElementButton)
+            if (textType.style.display == 'block') {
+                textType.style.display = 'none';
+                buttonType.innerHTML = "Read More";
+            }
+            else {
+                textType.style.display = 'block';
+                buttonType.innerHTML = "Read Less";
+            }
+            
+        }
+    </script>
+
+</head>
+
+<body>
+    
+    <h1><b>Elbread Roh</b></h1>
+    <br />
+    <img class="circularimg" src="PXL_20221022_232809122.jpg" style="width:30%" />
+    <br />
+    <div class="main">
+        <p>
+            I am currently a student at Rice University (c/o 2026) double majoring in Computer Science and Film.
+            <br />
+            <br />
+            My fields of interest include Computer-Generated Imagery Software Development, Animation Software Development, Machine Learning and AI, Game Development, and Graphic Design.
+            <br />
+            <br />
+            I am a passionate, highly-motivated, communicative, and analytical student willing to work on ambitious projects.
+        </p>
+    </div>
+    <br />
+    <br />
+    <h2><u>Projects</u></h2>
+    <h3>BitWorld Odyssey</h3>
+    <br />
+    <center><iframe class="circularimg" width="530" height="302" style="border:none" src="https://www.youtube.com/embed/Lcc9ULkcr5s" ;></iframe></center>
+    <br />
+    <br />
+    <center><button class="button" id="bitworldButton" onclick="button('bitworldText', 'bitworldButton')">Read More</button></center>
+    <br />
+    <br />
+    <div class="main" id="bitworldText" style="display:none">
+        <div>
+            <p>
+                October 2022 - August 2023
+                <br />
+                <br />
+                <a href="https://gdbrowser.com/93317783" style="color:white">BitWorld Odyssey</a> is a 2-hour long open-world, ray-caster survival game
+                <br />
+                designed <i>entirely within the limitations of Geometry Dash</i>.
+                <br />
+                In this game, I managed to create:
+                <ul>
+                    <li>An optimized ray-caster engine</li>
+                    <li>A save system that saves up to 7 bits of information for each resource</li>
+                    <li>Crafting, mining, trading, and first-person shooter mechanics</li>
+                    <li>8 different environments with different blocks and textures</li>
+                    <li>Numerous NPCs, bosses and collectibles</li>
+                </ul>
+                I did all of this without the use of <i>any</i> external programs. This was all done in
+                a game that doesn't support
+                <br />
+                Object Oriented Programming, abstraction, or even a way to
+                do simple math operators such as setting variables, multiplying, and dividing.
+                <br />
+                So how is this game even possible?
+                <br />
+                <br />
+                I took advantage of a Geometry Dash game mechanic called "triggers".
+                Triggers allow you to do many different things such as moving objects, changing their color, rotating objects, and other
+                operations.
+                <br />
+                The image below showcases some of the triggers that can be found in Geometry Dash's level editor:
+                <br />
+                <br />
+                <center><img class="circularimg" style="width:80%" src="Screenshot_20231022-181156.png"></center>
+                <br />
+                <br />
+                While triggers are usually used to make standard Geometry Dash levels, you can actually use them in a very similar way to
+                how you would use a programming language. The only difference is that there are LOTS of limitations.
+                <br />
+                As stated above, you can't do Object Oriented Programming, abstraction and triggers can only
+                add or subtract values. If you want to use more complicated functions, you need to build everything from the ground up.
+                <br />
+                So that's what I exactly did.
+                <br />
+                <br />
+                Here is what some of the code looks like in BitWorld Odyssey:
+                <br />
+                <br />
+                <center><img class="circularimg" style="width:80%" src="Screenshot_20231022-181247.png"></center>
+                <br />
+                <center><img class="circularimg" style="width:80%" src="Screenshot_20231022-183401.png"></center>
+                <br />
+                <br />
+                Geometry Dash's level editor was never intended to support game development. This meant I had to face many different
+                problems, such as lag, code efficiency, and countless editor bugs. But after 10 months of development, I managed to implement
+                all of these features into an immersive, unparalleled experience.
+                <br />
+                <br />
+                As of October 2023, BitWorld Odyssey has achieved 40,000 downloads as well as the highest level
+                <br />
+                of approval from the developer of Geometry Dash himself, RobTop Games.
+                <br />
+            </p>
+        </div>
+
+    </div>
+
+    <br />
+    <hr />
+    <h3>Solar Flare Research Project</h3>
+    <br />
+
+    <img class="circularimg" src="PXL_20220311_180125994.jpg" style="width:20%">
+    <br />
+    <br />
+    <a href="Research Project4.pdf">
+        <img class="circularimg" src="researchproject4.jpg" style="width:35%">
+    </a>
+
+    <br />
+    <br />
+    <center><button class="button" id="solarButton" onclick="button('solarText', 'solarButton')">Read More</button></center>
+    <br />
+    <br />
+    <div class="main" id="solarText" style="display:none">
+        <div>
+            <p>
+                May 2021 - March 2022
+                <br />
+                <br />
+                During my senior year, I directed independent solar flare research with professor
+                <a href="https://gray.cs.ua.edu/" style="color:white">Dr. Gray from the University of Alabama.</a>
+                <br />
+                <br />
+                Our lives are highly dependent on satellite technology.
+                <ul>
+                    <li>GPS (Global Positioning Systems)</li>
+                    <li>Astronomical Observations</li>
+                    <li>Television, Radio, the Internet, etc.</li>
+                </ul>
+
+                All of these things would be impossible without satellites.
+                This is why solar flares are so dangerous.
+                <br />
+                Solar flares are a phenomenon where the sun bursts out
+                electromagnetic particles, particularly UV radiation and X-rays.
+                The sun ejects these flares in an inconsistent pattern.
+                <br />
+                If these flares collide with our satellites, they would cause massive damage
+                to our infrastructure, resulting in widescale blackouts across the globe.
+                <br />
+                This project aimed to utilize machine learning to predict severe solar flare occurences.
+                <br />
+                Data was taken from the National Oceanic and Atmospheric Administration (NOAA) through
+                the observations of Geostationary Operational Environmental Satellites (GOES).
+                Keras was used to perform machine learning on the datasets.
+                <br />
+                <br />
+                While I was not able to create a working model because of the erratic nature of the data sets,
+                I was able to find interesting patterns within the data. The solar flare data sets followed a
+                known 11-year solar cycle, but I was also able to find a second, much longer solar cycle that hosted
+                the smaller 11-year solar cycles.
+            </p>
+        </div>
+
+    </div>
+
+    <br />
+    <hr />
+    <h3>Animations</h3>
+    <br />
+    <div class="scroll-container">
+        <iframe width="530" height="300" style="border:none" src="https://youtube.com/embed/MadJdZa-6QU" ;></iframe>
+        <iframe width="530" height="300" style="border:none" src="https://youtube.com/embed/Dw3nCi7QSM4" ;></iframe>
+        <iframe width="530" height="300" style="border:none" src="https://youtube.com/embed/vnlisYtWKEA" ;></iframe>
+        <iframe width="530" height="300" style="border:none" src="https://youtube.com/embed/PKNhXAtLjKo" ;></iframe>
+        <iframe width="530" height="300" style="border:none" src="https://youtube.com/embed/o9lVb7SX2Ow" ;></iframe>
+    </div>
+    <br />
+    <br />
+    <center><button class="button" id="animationButton" onclick="button('animationText', 'animationButton')">Read More</button></center>
+    <br />
+    <br />
+    <div class="main" id="animationText" style="display:none">
+        <div>
+            <p>
+                October 2019 - Present
+                <br />
+                <br />
+                During my free time, I like to independently produce animated films. I use various software
+                such as Adobe Products, Blender and Flipaclip. I also make the music and sound effects with
+                FL Studio 20. To me, animation is a vessel for unrestricted imagination, and a pure artform.
+                <br />
+                <br />
+                Finished Projects:
+                <ul>
+                    <li>
+                        <i>Kiki - July 2021</i>
+                        <br />
+                        "Kiki the Chicken goes exploring. What could possibly go wrong?"
+                        <br />
+                        With this short, I wanted to push my animation skills by exploring many techniques that I had not used before, such as parallax
+                        backgrounds, stop motion, and playing with perspective. This was definitely an animation experiment first, and a story second,
+                        but I am proud of what I was able to accomplish here.
+                        <br />
+                        <br />
+                    </li>
+                    <li>
+                        <i>BitWorld Hell Trailer Animations - August 2022</i>
+                        <br />
+                        To complement the release of one of my games "BitWorld Hell" (not to be confused with BitWorld Odyssey), I decided to use
+                        computer animation to make cutscenes for the game's trailer. Challenges included getting used to character rigging, texturing,
+                        and modelling.
+                        <br />
+                        <br />
+                    </li>
+                    <li>
+                        <i>Electrolyte Love - May 2021</i>
+                        <br />
+                        "A love story about two compounds, HCl and NaOH."
+                        <br />
+                        I produced this animated short film for my AP chemistry class within a two-week timeframe. I wanted to make a short akin to something
+                        you would see in a Pixar film, where inanimate objects would come to life. Originally, I had a much longer script and storyboard planned,
+                        but due to time constraints, I vastly condensed this short to keep the best ideas in.
+                        <br />
+                        <br />
+
+                    </li>
+                    <li>
+                        <i>ASMS Toons Episode 1: Procrastination - January 2020</i>
+                        <br />
+                        "An ASMS Student attempts to study, but something happens along the way..."
+                        <br />
+                        This was one of my first animated short films, and my first serious foray into 2D animation. The premise of this film is based
+                        on my experiences at my high school, <a href="https://www.asms.net/" style="color:white"> the Alabama School of Math and Science</a>.
+                        I presented this short film to an audience of over 300 people where I received glowing praise.
+                        <br />
+                        <br />
+                    </li>
+                    <li>
+                        <i>DragonTalks Visuals - March 2021</i>
+                        <br />
+                        This was an animated montage for my high school's research symposium. I got the topics from each presenter and
+                        made a short animated segment based on them.
+                        <br />
+                        <br />
+                    </li>
+                </ul>
+                Upcoming Projects:
+                <ul>
+                    <li>Animated Short Film about Plants - 2023</li>
+                    <li>"PDC" - Early 2024</li>
+                    <li>The Flowers Bloom - TBA</li>
+                </ul>
+            </p>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
